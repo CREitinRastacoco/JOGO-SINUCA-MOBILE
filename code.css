@@ -1,0 +1,34 @@
+body {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 10px 0;
+    /* Evita o scroll estranho no celular */
+    overflow: hidden;
+    height: 100vh;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+#game-container {
+    border: 10px solid #5C3D2E;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    /* Garante que o jogo não saia da tela */
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+canvas {
+    display: block;
+    /* O canvas se ajustará ao contêiner */
+    width: 100%;
+    height: auto;
+}
